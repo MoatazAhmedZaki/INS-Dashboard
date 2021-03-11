@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/INS-Dashboard/static/css/main.c23bc9b9.chunk.css",
+    "main.js": "/INS-Dashboard/static/js/main.3fcd9de0.chunk.js",
+    "main.js.map": "/INS-Dashboard/static/js/main.3fcd9de0.chunk.js.map",
+    "runtime-main.js": "/INS-Dashboard/static/js/runtime-main.e195d241.js",
+    "runtime-main.js.map": "/INS-Dashboard/static/js/runtime-main.e195d241.js.map",
+    "static/css/2.4dcd24aa.chunk.css": "/INS-Dashboard/static/css/2.4dcd24aa.chunk.css",
+    "static/js/2.2223f48a.chunk.js": "/INS-Dashboard/static/js/2.2223f48a.chunk.js",
+    "static/js/2.2223f48a.chunk.js.map": "/INS-Dashboard/static/js/2.2223f48a.chunk.js.map",
+    "index.html": "/INS-Dashboard/index.html",
+    "precache-manifest.275495df7aa451d097c92938901e17d8.js": "/INS-Dashboard/precache-manifest.275495df7aa451d097c92938901e17d8.js",
+    "service-worker.js": "/INS-Dashboard/service-worker.js",
+    "static/css/2.4dcd24aa.chunk.css.map": "/INS-Dashboard/static/css/2.4dcd24aa.chunk.css.map",
+    "static/css/main.c23bc9b9.chunk.css.map": "/INS-Dashboard/static/css/main.c23bc9b9.chunk.css.map",
+    "static/media/AuthenticationformsCSS.css": "/INS-Dashboard/static/media/BG1.f496cc04.png",
+    "static/media/NotificationsForms.css": "/INS-Dashboard/static/media/calendar-regular.17efa687.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e195d241.js",
+    "static/css/2.4dcd24aa.chunk.css",
+    "static/js/2.2223f48a.chunk.js",
+    "static/css/main.c23bc9b9.chunk.css",
+    "static/js/main.3fcd9de0.chunk.js"
+  ]
+}
