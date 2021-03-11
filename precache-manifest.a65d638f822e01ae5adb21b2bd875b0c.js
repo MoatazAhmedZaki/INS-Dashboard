@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3be1b184103740cdd7565defd1a4995",
+    "revision": "54972b4336e42091971cbb5d57ecf0b7",
     "url": "/IUS-Dashboard/index.html"
   },
   {
