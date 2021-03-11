@@ -1,0 +1,129 @@
+/*********CreateTemplateForm***********/
+.createTempForm input,
+.createTempForm select {
+  background: #e2e2e2 !important;
+  border-radius: 5px 5px 0px 0px !important;
+  border-bottom: 1px solid #7e7e7e;
+  height: 60px;
+}
+.deadlineInput {
+  background: #e2e2e2 !important;
+  height: 60px;
+  border-radius: 5px 5px 0px 0px !important;
+}
+
+.react-date-picker__inputGroup__input {
+  border-bottom: none !important;
+}
+
+.react-date-picker {
+  width: 100% !important;
+  border-bottom: 1px solid #7e7e7e;
+}
+.react-date-picker__wrapper {
+  border: none !important;
+}
+.createTempForm textarea {
+  background: #e2e2e2 !important;
+  border-radius: 5px 5px 0px 0px !important;
+  border-bottom: 1px solid #7e7e7e;
+  height: 120px;
+}
+.createTempForm input::placeholder,
+.createTempForm textarea::placeholder,
+.createTempForm select {
+  color: #7e7e7e !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+.createTempForm .pr-0 {
+  padding-right: 0 !important;
+}
+.createTempForm .cancelationbtn {
+  background-color: transparent !important;
+  border: none !important;
+  color: #cc4b4c !important;
+  font-weight: bold !important;
+}
+
+.deadlineinput {
+  background-image: url('../images/calendar-regular.svg');
+}
+
+.createTempForm .circle {
+  width: 25px;
+  height: 25px;
+  background-color: #e2e2e2;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 90%;
+  right: 50%;
+  border: solid 3px white;
+}
+
+/*******FreeTextForm*********/
+.freetxtForm input {
+  background-color: #e2e2e2 !important;
+  color: #7e7e7e !important;
+  padding: 28px !important;
+  border: none !important;
+  border-bottom: 2px solid #7e7e7e !important;
+}
+.freetxtForm textarea {
+  background-color: #e2e2e2 !important;
+  color: #7e7e7e !important;
+  padding: 10px !important;
+  border: none !important;
+  border-bottom: 2px solid #7e7e7e !important;
+}
+.freetxtForm select {
+  background-color: #e2e2e2 !important;
+  color: #7e7e7e !important;
+  border: none !important;
+  height: 60px;
+  border-bottom: 2px solid #7e7e7e !important;
+}
+
+.freetxtForm input {
+  position: relative;
+}
+.freetxtForm .circle1 {
+  width: 25px;
+  height: 25px;
+  background-color: #e2e2e2;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 90%;
+  right: 50%;
+  /* left: 50%; */
+  border: solid 3px white;
+}
+.searchInput {
+  background-color: #e2e2e2 !important;
+  color: #7e7e7e !important;
+  border: none !important;
+  border-bottom: 2px solid #7e7e7e !important;
+}
+
+.freetxtForm .cancelationbtn {
+  background-color: transparent !important;
+  border: none !important;
+  color: #cc4b4c !important;
+  font-weight: bold !important;
+}
+.freetxtForm .react-date-picker input {
+  padding: 0px !important;
+  border-bottom: none !important;
+}
+.freetxtForm .react-date-picker {
+  background-color: #e2e2e2 !important;
+  color: #7e7e7e !important;
+  padding: 15px !important;
+  border: none !important;
+  border-bottom: 2px solid #7e7e7e !important;
+  width: 100%;
+}
+
+.freetxtForm .react-date-picker__wrapper {
+  border: none !important;
+}

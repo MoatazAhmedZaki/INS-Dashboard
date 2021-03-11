@@ -1,0 +1,681 @@
+/*******************************************sign in****************************************/
+/* .signIn {
+    padding: 50% 30%;
+  } */
+  .signIn h3 {
+    /* color: #ed1c24; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+  
+ 
+  /* .signIncol {
+    border-right: solid 1px #b7b3b3;
+  } */
+  /* .signIn input {
+    border: solid 1px #ed1c24 !important;
+    border-radius: unset !important;
+    font-weight: unset !important;
+    font-size: 13px !important;
+    color: #7e7e7e !important;
+    padding: 25px;
+  } */
+  
+  .signinForget {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 12px;
+    align-items: center;
+    color: #7e7e7e !important;
+  }
+
+  /* .signIn button:active {
+    transform: scale(0.95);
+  }
+  .signIn button:hover {
+    background: #ed1c24;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 25px;
+    transition: transform 80ms ease-in;
+    border: 1px solid #ed1c24;
+  }
+  .signIn button:focus {
+    outline: none;
+  } */
+  
+  .signInBtn {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 0!important;
+  }
+  
+  /*********************************************sign up********************************************/
+  .SignUpForm h1 {
+    /* color: #ed1c24; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+  
+  .SignUpForm {
+    padding: 10px  20px   0px !important;
+  }
+  .FormsContainer {
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    width: 1600px;
+    overflow: hidden;
+    /* margin: 5% 0 !important; */
+    height: 600px;
+    margin:25px  0 0!important;
+  }
+  /* .form-group {
+    width: 100% !important;
+    padding-left: 2%;
+    margin-bottom: 0 !important;
+    border-left: 5px solid #ed1c24;
+    position: relative;
+  } */
+  
+  .formgroupmargin {
+    margin-top: 15px;
+  }
+  .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    overflow-y: auto;
+  }
+  .form-control {
+    padding: 25px 15px;
+    margin: 8px 0;
+    border-radius: 0 !important;
+    width: 100%;
+    /* border-color: #ed1c24 !important; */
+background-color:  #E2E2E2;;
+   
+  }
+  .sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    background-color:  #0168B6;
+
+  }
+  
+  .sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  /* .SignUpForm .signupButton {
+    text-align: center !important;
+    margin-top: 5%;
+  } */
+  
+  /* .FormsContainer button {
+    background: #ed1c24;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 25px;
+    transition: transform 80ms ease-in;
+    border: 1px solid #ed1c24;
+  } */
+  /* .FormsContainer button:active {
+    transform: scale(0.95);
+    background-color: #ed1c24 !important;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 25px;
+    transition: transform 80ms ease-in;
+    border: 1px solid #ed1c24;
+    outline: none !important;
+  }
+  
+  .FormsContainer button:focus {
+    outline: none !important;
+    background: #ed1c24 !important;
+    box-shadow: unset !important;
+  } */
+  
+  /***********overlay********/
+  
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+  }
+  
+  .FormsContainer.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+  }
+  .overlay {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+  .FormsContainer.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .FormsContainer.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+    background-color:#0168B6; ;
+  }
+  
+  @keyframes show {
+    0%,
+    49.99% {
+      opacity: 0;
+      z-index: 1;
+    }
+  
+    50%,
+    100% {
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+  
+  .FormsContainer.right-panel-active .overlay {
+    transform: translateX(50%);
+  }
+  .overlay-left {
+    transform: translateX(-20%);
+    border-right: 1.2px solid #b7b3b3;
+    /* border-left: 25px solid #ed1c24; */
+    background-image: url(../images/BG1.png);
+  }
+  
+  .FormsContainer.right-panel-active .overlay-left {
+    transform: translateX(0);
+  }
+  
+  .overlay-right {
+    right: 0;
+    transform: translateX(0);
+    border-left: 1px solid #b7b3b3;
+    /* border-right: 25px solid #ed1c24; */
+    background-image: url(../images/BG1.png);
+  }
+  
+  .FormsContainer.right-panel-active .overlay-right {
+    transform: translateX(20%);
+  }
+  
+  .overlaytexts {
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; */
+    padding-top: 110px;
+  }
+  
+  .overlay-panel {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .overlaytexts h1 {
+    color:  #FFFFFF;
+    font-size: 30px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 600;
+    
+  }
+  .login h1{
+    padding-top:140px;
+  }
+
+   .SIGNUP h1{
+    padding-top:160px;
+  }
+  
+  .overlaytexts p {
+    color: #ed1c24;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 33px !important;
+  }
+  
+  .ORdiv {
+    width: 46px;
+    text-align: center;
+    margin: auto;
+    border: solid 3px #ed1c24;
+    height: 43px;
+  }
+  .ORdiv p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+  
+    text-transform: uppercase;
+  
+    color: #ed1c24;
+  }
+  .formErrors {
+    /* color: #ed1c24; */
+    font-weight: bold;
+  }
+  
+  .icontringale {
+    top: 23% !important;
+    position: absolute;
+    right: -8%;
+  }
+  
+  /* ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #aaa;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 10px;
+  } */
+  
+  /************************verifyby **************************************/
+  
+  .verifyCon {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .verifyCon input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: solid 1px #ed1c24;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .verifyCon:hover input ~ .checkmark {
+    background-color: #fff;
+    border: solid 1px #ed1c24;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .verifyCon input:checked ~ .checkmark {
+    background-color: white;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .verifyCon input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .verifyCon .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .BbachError {
+    color: #ed1c24;
+    font-weight: bold !important;
+  }
+  
+  /* .verifyby h3 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: #ed1c24;
+  }
+  .verifyby p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  
+    color: #ed1c24;
+  } */
+  .sendcodeBtn button {
+    background: transparent;
+    border-radius: 0;
+    color: #ed1c24;
+    font-size: 13px;
+    border: none !important;
+  }
+  .sendcodeBtn button:hover,
+  .sendcodeBtn button:active,
+  .sendcodeBtn button:focus {
+    background: transparent !important;
+    border-radius: 0;
+    color: #ed1c24;
+    font-size: 13px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .verifyBtn button {
+    background: #ed1c24;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 25px;
+    transition: transform 80ms ease-in;
+    border: 1px solid #ed1c24;
+  }
+  
+  .verifyBtn button:hover,
+  .verifyBtn button:active,
+  .verifyBtn button:focus {
+    background: #ed1c24;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 25px;
+    transition: transform 80ms ease-in;
+    border: 1px solid #ed1c24;
+  }
+  
+  #snackbar {
+    width: 500px;
+    background-color: #ed1c24;
+    padding: 15px;
+    color: white;
+    position: absolute;
+    /* bottom: 10% !important; */
+    z-index: 500;
+    text-align: center;
+  }
+  
+  .modal-dialog {
+    top: 100px;
+  }
+  
+  .modal.feedBack .modal-dialog {
+    position: absolute !important;
+    top: 500px !important;
+    left: 520px;
+  }
+  
+  .SignUpForm p {
+    font-size: 12px !important;
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+  }
+  .modalforgetdev button {
+    background-color: transparent !important;
+    color: #7e7e7e !important;
+    border: none !important;
+    margin: auto;
+    box-shadow: none !important;
+  }
+  
+  .forgetdev button {
+    background-color: transparent !important;
+    color: #7e7e7e !important;
+    border: none !important;
+    margin: auto;
+    font-size: 13px;
+    box-shadow: none !important;
+  }
+  
+  .forgetdev button:active,
+  .forgetdev button:focus,
+  .forgetdev button:hover {
+    background: transparent !important;
+    color: #7e7e7e !important;
+    border: none !important;
+    margin: auto;
+    font-size: 13px;
+    box-shadow: none !important;
+  }
+  .closebtn button {
+    background-color: transparent !important;
+    color: #ed1c24 !important;
+    border: none !important;
+    margin: auto;
+    box-shadow: none !important;
+  }
+  
+  .closebtn button:active,
+  .closebtn button:focus,
+  .closebtn button:hover {
+    background: transparent !important;
+    color: #ed1c24 !important;
+    border: none !important;
+    margin: auto;
+    box-shadow: none !important;
+  }
+  
+  #countdown {
+    /* position: absolute; */
+    margin: auto;
+    /* margin-top: 100px; */
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    /* background-color: blue; */
+  }
+  
+  #countdown-number {
+    color: black;
+    display: inline-block;
+    line-height: 40px;
+  }
+  
+  .myCounter {
+    position: relative;
+    top: -40px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+  }
+  
+  .myCounter circle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: black;
+    fill: none;
+    animation: countdown 10s linear infinite forwards;
+  }
+  
+  @keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 113px;
+    }
+  }
+  
+  .alertVerify {
+    background-color: #ed1c24;
+    position: absolute;
+    top: 8%;
+    right: 20%;
+    left: 10%;
+    color: white;
+  }
+  .alertVerify p {
+    color: white;
+  }
+  
+  .alertVerify button {
+    background: transparent !important;
+    border: none !important;
+    margin: auto;
+    box-shadow: none !important;
+  }
+  .alertVerify span {
+    text-decoration-line: underline;
+  }
+  
+  .alertverify2 {
+    background-color: #fff;
+    color: #ed1c24;
+  }
+  .alertverify2 button {
+    background-color: #fff;
+    color: #ed1c24;
+    border: none !important;
+    margin: auto;
+    box-shadow: none !important;
+  }
+  .alertverify2 span {
+    text-decoration-line: underline;
+  }
+  
+  .alertverify2 button:active,
+  .alertverify2 button:focus,
+  .alertverify2 button:hover {
+    background-color: #fff !important;
+    color: #ed1c24 !important;
+    border: none !important;
+    margin: auto;
+    box-shadow: none !important;
+  }
+  
+  /*icon */
+  .transformicon{
+      position: absolute;
+      top:50%;
+      right: 2%;
+  }
+
+
+  .transformsighupicon{
+    position: absolute;
+    bottom:-85%;
+    left: -20%;
+  }
+
+  .transformsigninicon{
+    position: absolute;
+    top:48%;
+    left: 83%;
+  }
+  .transformsigninicon button{
+    background: none;
+    border:none
+  }
+
+  .transformsighupicon button{
+      background: none;
+      border:none
+  }
+
+.SignInForm{
+  /* padding-top: 120px; */
+  padding-left: 70px;
+  padding-right: 60px;
+}
+ 
+  .signinFormcircle .circle {
+    width: 25px;
+    height: 25px;
+    background-color: #e2e2e2;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 80%;
+    right: 50%;
+    border: solid 2px #0168B6;
+  }
+
+  .signinBtn .btn-primary {
+    color: #fff;
+    background-color: #FF9900 !important;
+    border-color: #007bff;
+  }

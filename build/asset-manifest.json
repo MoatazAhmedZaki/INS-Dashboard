@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/IUS-Dashboard/static/css/main.8e54c60a.chunk.css",
+    "main.js": "/IUS-Dashboard/static/js/main.0275c481.chunk.js",
+    "main.js.map": "/IUS-Dashboard/static/js/main.0275c481.chunk.js.map",
+    "runtime-main.js": "/IUS-Dashboard/static/js/runtime-main.3d8b789c.js",
+    "runtime-main.js.map": "/IUS-Dashboard/static/js/runtime-main.3d8b789c.js.map",
+    "static/css/2.4dcd24aa.chunk.css": "/IUS-Dashboard/static/css/2.4dcd24aa.chunk.css",
+    "static/js/2.18004952.chunk.js": "/IUS-Dashboard/static/js/2.18004952.chunk.js",
+    "static/js/2.18004952.chunk.js.map": "/IUS-Dashboard/static/js/2.18004952.chunk.js.map",
+    "index.html": "/IUS-Dashboard/index.html",
+    "precache-manifest.a65d638f822e01ae5adb21b2bd875b0c.js": "/IUS-Dashboard/precache-manifest.a65d638f822e01ae5adb21b2bd875b0c.js",
+    "service-worker.js": "/IUS-Dashboard/service-worker.js",
+    "static/css/2.4dcd24aa.chunk.css.map": "/IUS-Dashboard/static/css/2.4dcd24aa.chunk.css.map",
+    "static/css/main.8e54c60a.chunk.css.map": "/IUS-Dashboard/static/css/main.8e54c60a.chunk.css.map",
+    "static/media/AuthenticationformsCSS.css": "/IUS-Dashboard/static/media/BG1.f496cc04.png",
+    "static/media/NotificationsForms.css": "/IUS-Dashboard/static/media/calendar-regular.17efa687.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d8b789c.js",
+    "static/css/2.4dcd24aa.chunk.css",
+    "static/js/2.18004952.chunk.js",
+    "static/css/main.8e54c60a.chunk.css",
+    "static/js/main.0275c481.chunk.js"
+  ]
+}

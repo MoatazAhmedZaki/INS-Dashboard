@@ -1,0 +1,118 @@
+/******AmazingTemplateCard*******/
+.temp {
+  /* background: linear-gradient(105.44deg, #FF9900 0%, #FBBB00 100%); */
+  background: linear-gradient(112.06deg, #518ef8 0%, #243b7e 100%);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.temptbtn {
+  border: 1px solid #ff9900;
+  color: white;
+  padding: 10px 25px;
+  background-color: #ff9900;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.freetemptbtn {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+  background-color: #ff9900;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.amazzzingcard-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.amazzzingcard-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff !important;
+  font-weight: 90;
+  
+}
+
+
+.rightsec h5 {
+  color: #ffffff;
+}
+
+.rightsec p {
+  color: #ffffff;
+  font-weight: 80;
+}
+
+/* .card-text{
+    font-weight: 90;
+} */
+
+/********FreeTextCard*********/
+
+.freecard {
+  background: linear-gradient(105.44deg, #ff9900 0%, #fbbb00 100%);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.freetextbtn {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+}
+.freecard-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 90;
+}
+
+.freecard-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+/************NotifyUserCard************/
+.notifyusercard p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  /* color: #ffffff; */
+}
+
+.notifyusercard .notifysearch {
+  width: 100% !important;
+  background-color: #e2e2e2 !important;
+  border-bottom: solid 1px #7e7e7e !important;
+}

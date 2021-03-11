@@ -1,0 +1,78 @@
+.bell {
+  background-color: white !important;
+  border: solid 1px #ccc !important;
+  color: #0091ff !important;
+  font-weight: bold;
+}
+
+.css-1wa3eu0-placeholder {
+  visibility: hidden;
+}
+.css-1wa3eu0-placeholder:after {
+  content: 'Table Settings';
+  visibility: visible;
+  display: block;
+  position: relative;
+  background-color: transparent;
+  bottom: 10px;
+  width: 100%;
+}
+.slide-pane_from_bottom.ReactModal__Content--after-open {
+  float: right !important;
+}
+
+.subtabs .nav-link {
+  border: none !important;
+  font-weight: normal;
+  font-size: 19px;
+  align-items: center;
+  font-variant: small-caps;
+  color: #c8c8c8 !important;
+}
+.subtabs .nav-link.active {
+  border: none !important;
+  color: #000000 !important;
+  border-bottom: solid 4px #0066b3 !important;
+}
+.subtabs .nav-link.active:hover {
+  border: none !important;
+  border-bottom: solid 4px #0066b3 !important;
+}
+.subtabs .nav-link:hover {
+  border: none !important;
+}
+
+.maintabs .nav-link {
+  border: none !important;
+
+  color: #c8c8c8 !important;
+  font-weight: bold;
+  font-size: 21px;
+}
+.maintabs .nav-link.active {
+  border: none !important;
+  color: #0066b3 !important;
+  font-weight: bold;
+  font-size: 21px;
+  border-bottom: solid 4px #ff9900 !important;
+}
+.maintabs .nav-link.active:hover {
+  border: none !important;
+  border-bottom: solid 4px #ff9900 !important;
+}
+.maintabs .nav-link:hover {
+  border: none !important;
+}
+
+/*CreateTemplatePanel*/
+.slide-pane__header {
+  background: #0066b3 !important;
+}
+.slide-pane .slide-pane__title {
+  color: #fff !important;
+  font-weight: bold !important;
+  font-size: 22px !important;
+}
+.slide-pane__title-wrapper {
+  margin-left: 0 !important;
+}

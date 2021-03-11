@@ -1,0 +1,81 @@
+.navLogo {
+  width: 115px;
+  position: relative;
+  top: 3px;
+}
+.navbar-brand {
+  margin-left: 7% !important;
+}
+.Navb {
+  width: 100%;
+  background-color: #ff9900;
+  padding: 0px !important;
+}
+
+.navbar-nav .active {
+  position: relative;
+}
+.navbar-collapse {
+  padding-right: 100px;
+}
+.navbar-toggler {
+  margin-right: 30px;
+}
+.navbar-nav .active::before {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  right: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #0066b3;
+  content: '';
+}
+
+.navbar-nav .active::after {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  margin: auto;
+  width: 15px;
+  height: 22px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #0066b3;
+  content: '';
+}
+
+.navbar-nav a {
+  padding: 28px 0 28px 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+
+  /* font-family: Arial; */
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.navbar-brand {
+  margin-left: 300px;
+}
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .active::after {
+    display: none !important;
+  }
+  .navbar-nav .active::before {
+    display: none !important;
+  }
+}

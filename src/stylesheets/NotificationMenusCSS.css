@@ -1,0 +1,218 @@
+/**********SideMenu**********/
+.mainMenu .bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 25px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #fff;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  right: 7% !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.mainMenu .bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  left: 0%;
+  /* transform: translate3d(-80%,0px,0px) !important; */
+}
+
+/* General sidebar styles */
+.mainMenu .bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  position: relative;
+  /* left: -11px; */
+  left: -5%;
+  top: 0px;
+  width: 100% !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.mainMenu .bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.mainMenu .bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.mainMenu .bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.mainMenu .bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.mainMenu .menu {
+  width: 200px;
+  position: relative;
+}
+
+.lefttedtext {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  transform: rotate(90deg);
+}
+
+.systemicon {
+  width: 50px;
+  height: 20px;
+  background-color: #ff9900;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin-right: 5px;
+}
+
+/* .textfix{
+      transform: rotate(90deg);
+      position: relative;
+      top:0;
+      left: 0;
+
+  } */
+
+/* .system{
+   padding: 15px;
+ }
+
+ .subsystem{
+   padding:  3px 40px;
+ } */
+
+.card {
+  background: transparent !important;
+}
+
+.card:focus,
+.accordion > .card .card-header,
+.bm-item.accordion {
+  outline: none !important;
+}
+
+.btn-link.focus,
+.btn-link:focus {
+  text-decoration: none;
+}
+
+.systemiccon {
+  color: #c7c7c7;
+}
+
+.entity {
+  color: #c7c7c7;
+}
+
+.entity:hover {
+  color: #c7c7c7;
+}
+
+.systemiccon:hover {
+  color: #c7c7c7;
+}
+.bodylinks a {
+  color: #c7c7c7;
+  padding: 10px 21px;
+}
+
+/*************SubSideMenu*************/
+/* .subbuttton .bm-burger-bars {
+  background: transparent !important;
+}
+.subbuttton {
+  position: absolute !important;
+  background-color: blueviolet;
+  width: 5vw !important;
+  height: 100vh !important;
+  top: 0% !important;
+  left: 0% !important;
+}
+
+.mysubmenu .bm-menu {
+  position: absolute !important;
+  background-color: red !important;
+  width: 5vw !important;
+  height: 100% !important;
+  top: 0% !important;
+  left: 0% !important;
+} */
+
+.subbuttton .bm-burger-bars {
+  background: transparent !important;
+}
+.subbuttton {
+  position: absolute !important;
+  background-color: #0066b3;
+  width: 2vw !important;
+  height: 100vh !important;
+  top: 0% !important;
+  left: 0% !important;
+  content: 'ffff' !important;
+}
+
+.subbuttton button::before {
+  content: 'AdVANCED SORT AND FILTER';
+  color: white;
+  font-size: 20px;
+  left: -1130%;
+  position: absolute;
+  width: 100vh !important;
+  height: auto !important;
+  top: 40%;
+  background-color: transparent;
+  transform: rotate(-270deg);
+}
+
+.mysubmenu {
+  position: absolute !important;
+  background-color: blueviolet !important;
+  height: 100vh !important;
+  top: 0% !important;
+  left: 0% !important;
+  z-index: 5555555;
+}
+
+.mysubmenu .bm-menu {
+  position: absolute;
+  background-color: #0066b3 !important;
+  z-index: 5555555;
+  left: 0% !important;
+  top: 0% !important;
+}
+.mysubmenu .bm-cross-button {
+  z-index: 5555555;
+  right: 0% !important;
+}
